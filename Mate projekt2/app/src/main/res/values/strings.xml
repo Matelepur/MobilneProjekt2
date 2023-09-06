@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Coomics App</string>
+    <string-array name="age_demographic_entries">
+        <item>7</item>
+        <item>12</item>
+        <item>16</item>
+        <item>18</item>
+    </string-array>
+
+    <string-array name="age_demographic_entry_values">
+        <item>age_7</item>
+        <item>age_12</item>
+        <item>age_16</item>
+        <item>age_18</item>
+    </string-array>
+    <string-array name="demographic_entries">
+        <item>7</item>
+        <item>12</item>
+        <item>16</item>
+        <item>18</item>
+    </string-array>
+    <string-array name="demographic_entry_values">
+        <item>boys</item>
+        <item>girls</item>
+        <item>all</item>
+    </string-array>
+</resources>

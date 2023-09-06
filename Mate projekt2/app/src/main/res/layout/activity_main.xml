@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Home Screen: List of Comics -->
+    <TextView
+        android:id="@+id/comicsListTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1dp"
+        android:padding="16dp"
+        android:text="My Comics"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/comicsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/comicsListTitleTextView"
+        android:layout_above="@+id/addComicButton"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <TextView
+        android:id="@+id/emptyListTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comicsListTitleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:padding="16dp"
+        android:text="No comics added yet."
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <!-- Add Comic Button -->
+    <Button
+        android:id="@+id/addComicButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Comic"
+        android:padding="16dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

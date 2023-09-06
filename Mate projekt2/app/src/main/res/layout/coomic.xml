@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- Comic Image -->
+    <ImageView
+        android:id="@+id/comicImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:contentDescription="Comic Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_image"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        tools:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <!-- Comic Name -->
+    <EditText
+        android:id="@+id/comicNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comicImageView"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Comic Name"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <!-- Publishing House -->
+    <EditText
+        android:id="@+id/publishingHouseEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comicNameEditText"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Publishing House"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <!-- Age Demographic -->
+    <TextView
+        android:id="@+id/ageDemographicTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age Demographic"
+        android:layout_below="@id/publishingHouseEditText"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <Spinner
+        android:id="@+id/ageDemographicSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ageDemographicTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:minHeight="48dp"
+        android:entries="@array/age_demographic_entries"
+        android:entryValues="@array/age_demographic_entry_values" />
+
+
+    <!-- Confirm Button -->
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ageDemographicSpinner"
+        android:layout_marginTop="72dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Confirm"
+        tools:ignore="UnknownId" />
+
+    <!-- Cancel Button -->
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ageDemographicSpinner"
+        android:layout_marginTop="72dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Cancel"
+        android:layout_toEndOf="@id/confirmButton"
+        tools:ignore="UnknownId" />
+
+</RelativeLayout>
